@@ -1,6 +1,7 @@
-// Flex mixin
-@mixin flexCenter {
+// Flex mixin //
+@mixin flex($direction) {
   display: flex;
+  flex-direction: $direction;
   justify-content: center;
   align-items: center;
 }

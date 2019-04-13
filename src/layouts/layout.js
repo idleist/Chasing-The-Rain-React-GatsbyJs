@@ -28,9 +28,11 @@ const Layout = ({ children }) => (
         <Navbar />
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          © 2019 | IdeleistDesign.co.uk
+          <a href="https://www.vexels.com/vectors/preview/141426/wildebeest-silhouette">
+            Wildebeest silhouette
+          </a>
+          | designed by Vexels
         </footer>
       </>
     )}

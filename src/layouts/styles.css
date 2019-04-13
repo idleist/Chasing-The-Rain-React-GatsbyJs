@@ -1,3 +1,4 @@
+/* Imported Fonts from dafonts.com */
 @font-face {
   font-family: "african";
   src: local("african"), url("../assets/fonts/african.ttf"); }
@@ -6,17 +7,70 @@
   font-family: "Nanda";
   src: local("Nanda"), url("../assets/fonts/Nanda.ttf"); }
 
+/* CSS Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+/* Set relative font size in ems on html */
+html {
+  font-size: 1em; }
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../assets/images/newcover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black; }
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 1em; }
+
+/* Buttons CSS for mobile devices */
+#screen--btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #screen--btns .screen--btn,
+  #screen--btns .screen-btn-link {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    font-family: "Nanda";
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 8px 0 5px 0; }
+
+/* Navbar CSS */
 #navbar {
   height: 80px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: black; }
+  background: #1e1e1e;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #1e1e1e 0%, rgba(30, 30, 30, 0.5) 70%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #1e1e1e 0%, rgba(30, 30, 30, 0.5) 70%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #1e1e1e 0%, rgba(30, 30, 30, 0.5) 70%, rgba(255, 255, 255, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1e1e', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */ }
   #navbar #navbar--wildebeest {
     width: 50px; }
   #navbar #navbar--links {
@@ -51,3 +105,166 @@
       width: 80px; }
     #navbar #navbar--links .navbar--link {
       font-size: 2em; } }
+
+#home {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "homeTitle" "homeImage"; }
+
+#home--title {
+  grid-area: homeTitle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #home--title #home--heading {
+    text-align: center;
+    color: #fff;
+    font-size: 1.7em;
+    font-weight: 500;
+    font-family: "african"; }
+  #home--title #home--tagline {
+    font-size: 1.2em;
+    font-family: "Nanda", "Times New Roman", Times, serif;
+    font-weight: 900;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(41, 41, 41, 0.5); }
+
+#home--image {
+  grid-area: homeImage;
+  width: 100%; }
+  #home--image-formats {
+    width: 100%; }
+
+@media only screen and (min-width: 567px) and (max-width: 767px) {
+  #home {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "homeTitle   homeImage"; } }
+
+@media (min-width: 768px) {
+  .homeHeading {
+    font-size: 4em;
+    padding-top: 40px; }
+  #homeTagline {
+    font-size: 3em; } }
+
+#author {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr; }
+
+#author--heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 15px; }
+
+.author--heading {
+  font-size: 1.8em;
+  font-family: "african";
+  color: #fff; }
+
+#author--image {
+  background-color: black;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid #fff; }
+
+.author--blurb {
+  font-size: 1.2em;
+  font-family: "Nanda";
+  font-weight: 900;
+  margin: 0;
+  padding: 0 0 10px 0;
+  text-align: center;
+  color: #fff;
+  text-align: justify;
+  line-height: 110%; }
+
+@media (min-width: 567px) and (max-width: 767px) {
+  #authorButtons {
+    display: none; }
+  #authorContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr; }
+  #authorHeadandImage {
+    grid-template-columns: 1fr; }
+  .authorHeading {
+    font-size: 1.5em;
+    padding: 0; } }
+
+@media (min-width: 768px) {
+  .authorHeading {
+    font-size: 4em; }
+  #authorImage {
+    height: 200px;
+    width: 200px;
+    border: 4px solid white; }
+  #authorBlurb {
+    padding-top: 20px; }
+  .authorBlurb {
+    font-size: 2.5em; } }
+
+@media (min-width: 900px) {
+  .authorHeading {
+    font-size: 5em;
+    padding-top: 50px; }
+  #authorImage {
+    height: 300px;
+    width: 300px; }
+  #authorBlurb {
+    padding-top: 50px; } }
+
+#story {
+  display: grid;
+  grid-template-columns: 1fr; }
+
+.story--heading {
+  font-size: 1.3em;
+  font-family: "african";
+  text-align: center;
+  padding: 0 0 10px 0;
+  color: #fff; }
+
+.book--blurb {
+  font-size: 1.2em;
+  font-family: "Nanda";
+  font-weight: 900;
+  margin: 0;
+  padding: 0 0 10px 0;
+  text-align: center;
+  color: white;
+  text-align: justify;
+  line-height: 110%; }
+
+@media (min-width: 567px) and (max-width: 767px) {
+  #storyButtons {
+    display: none; }
+  #storyContainer {
+    display: grid;
+    grid-template-columns: 1fr 3fr; }
+  .storyHeading {
+    padding: 0 5px 0 0;
+    font-size: 1.3em; } }
+
+@media (min-width: 768px) {
+  .storyHeading {
+    font-size: 4em;
+    padding: 0 0 20px 0; }
+  .bookBlurb {
+    font-size: 2.3em;
+    padding: 0 0 20px 0;
+    line-height: 120%; } }
+
+@media (min-width: 900px) {
+  .storyHeading {
+    font-size: 5em;
+    padding: 0 0 40px 0; }
+  .bookBlurb {
+    font-size: 3em; } }
