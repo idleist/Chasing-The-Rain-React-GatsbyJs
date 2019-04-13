@@ -28,11 +28,11 @@ const Layout = ({ children }) => (
         <Navbar />
         <main>{children}</main>
         <footer>
-          © 2019 | IdeleistDesign.co.uk
+          <p>© 2019 | IdeleistDesign.co.uk</p>
           <a href="https://www.vexels.com/vectors/preview/141426/wildebeest-silhouette">
             Wildebeest silhouette
           </a>
-          | designed by Vexels
+          <span> | designed by Vexels</span>
         </footer>
       </>
     )}
