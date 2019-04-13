@@ -1,4 +1,53 @@
+@font-face {
+  font-family: "african";
+  src: local("african"), url("../assets/fonts/african.ttf"); }
+
+@font-face {
+  font-family: "Nanda";
+  src: local("Nanda"), url("../assets/fonts/Nanda.ttf"); }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+#navbar {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black; }
+  #navbar #navbar--wildebeest {
+    width: 50px; }
+  #navbar #navbar--links {
+    display: none;
+    padding-right: 15px; }
+    #navbar #navbar--links .navbar--link {
+      text-decoration: none;
+      color: #fff;
+      font-family: "Nanda";
+      font-size: 1.3em;
+      font-weight: 700;
+      padding-right: 15px;
+      outline: none; }
+    #navbar #navbar--links .navbar--link-buy {
+      color: #000;
+      background: #e3891f;
+      padding: 15px;
+      border-radius: 10px; }
+
+@media (min-width: 567px) {
+  #navbar {
+    justify-content: space-between; }
+    #navbar #navbar--wildebeest {
+      padding-left: 15px; }
+    #navbar #navbar--links {
+      display: block; } }
+
+@media (min-width: 767px) {
+  #navbar {
+    height: 100px; }
+    #navbar #navbar--wildebeest {
+      width: 80px; }
+    #navbar #navbar--links .navbar--link {
+      font-size: 2em; } }

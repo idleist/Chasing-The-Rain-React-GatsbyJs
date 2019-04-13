@@ -1,0 +1,58 @@
+#navbar {
+  height: 80px;
+  @include flexCenter;
+  background: black;
+
+  #navbar--wildebeest {
+    width: 50px;
+  }
+
+  #navbar--links {
+    display: none;
+    padding-right: 15px;
+
+    .navbar--link {
+      text-decoration: none;
+      color: $text-primary;
+      font-family: "Nanda";
+      font-size: 1.3em;
+      font-weight: 700;
+      padding-right: 15px;
+      outline: none;
+    }
+    .navbar--link-buy {
+      color: $text-secondary;
+      background: $background-color;
+      padding: 15px;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media (min-width: 567px) {
+  #navbar {
+    justify-content: space-between;
+
+    #navbar--wildebeest {
+      padding-left: 15px;
+    }
+
+    #navbar--links {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  #navbar {
+    height: 100px;
+
+    #navbar--wildebeest {
+      width: 80px;
+    }
+
+    #navbar--links .navbar--link {
+      font-size: 2em;
+    }
+  }
+}

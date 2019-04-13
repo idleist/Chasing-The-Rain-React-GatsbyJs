@@ -1,5 +1,27 @@
+// Variables
+$background-color: #e3891f;
+$text-primary: #fff;
+$text-secondary: #000;
+
+// Fonts
+@font-face {
+  font-family: "african";
+  src: local("african"), url("../assets/fonts/african.ttf");
+}
+
+@font-face {
+  font-family: "Nanda";
+  src: local("Nanda"), url("../assets/fonts/Nanda.ttf");
+}
+
+// CSS Reset
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+@import "config";
+@import "navbar";
+@import "index";
