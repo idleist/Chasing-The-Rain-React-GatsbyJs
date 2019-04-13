@@ -5,6 +5,7 @@
 }
 
 #author--heading {
+  text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -15,6 +16,7 @@
 .author--heading {
   font-size: 1.8em;
   font-family: "african";
+  font-weight: 400;
   color: $text-primary;
 }
 
@@ -36,62 +38,4 @@
   color: $text-primary;
   text-align: justify;
   line-height: 110%;
-}
-
-@media (min-width: 567px) and (max-width: 767px) {
-  #authorButtons {
-    display: none;
-  }
-
-  #authorContainer {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-
-  #authorHeadandImage {
-    grid-template-columns: 1fr;
-  }
-
-  .authorHeading {
-    font-size: 1.5em;
-    padding: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  .authorHeading {
-    font-size: 4em;
-  }
-
-  #authorImage {
-    height: 200px;
-    width: 200px;
-    border: 4px solid white;
-  }
-
-  #authorBlurb {
-    padding-top: 20px;
-  }
-  .authorBlurb {
-    font-size: 2.5em;
-  }
-}
-
-@media (min-width: 900px) {
-  .authorHeading {
-    font-size: 5em;
-    padding-top: 50px;
-  }
-
-  #authorImage {
-    height: 300px;
-    width: 300px;
-  }
-
-  #authorBlurb {
-    padding-top: 50px;
-  }
-}
-
-@media (min-width: 1800px) {
 }

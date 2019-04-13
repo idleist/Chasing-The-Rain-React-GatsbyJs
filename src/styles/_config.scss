@@ -1,4 +1,12 @@
-// Flex mixin //
+// Variables
+$background-color: #e3891f;
+$text-primary: #fff;
+$text-secondary: #000;
+$text-shadow: 1px 1px 3px rgba(41, 41, 41, 0.5);
+
+// Mixins
+
+// flex mixin //
 @mixin flex($direction) {
   display: flex;
   flex-direction: $direction;
@@ -7,3 +15,23 @@
 }
 
 // Media Query Mixins
+@mixin mediaSm {
+  @media screen and (max-width: 568px) {
+    @content;
+  }
+}
+@mixin mediaMd {
+  @media screen and (min-width: 569px) {
+    @content;
+  }
+}
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}

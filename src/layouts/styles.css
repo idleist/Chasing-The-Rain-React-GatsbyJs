@@ -90,22 +90,6 @@ main {
       padding: 15px;
       border-radius: 10px; }
 
-@media (min-width: 567px) {
-  #navbar {
-    justify-content: space-between; }
-    #navbar #navbar--wildebeest {
-      padding-left: 15px; }
-    #navbar #navbar--links {
-      display: block; } }
-
-@media (min-width: 767px) {
-  #navbar {
-    height: 100px; }
-    #navbar #navbar--wildebeest {
-      width: 80px; }
-    #navbar #navbar--links .navbar--link {
-      font-size: 2em; } }
-
 #home {
   width: 100%;
   display: grid;
@@ -113,11 +97,7 @@ main {
   grid-template-areas: "homeTitle" "homeImage"; }
 
 #home--title {
-  grid-area: homeTitle;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  grid-area: homeTitle; }
   #home--title #home--heading {
     text-align: center;
     color: #fff;
@@ -140,24 +120,13 @@ main {
   #home--image-formats {
     width: 100%; }
 
-@media only screen and (min-width: 567px) and (max-width: 767px) {
-  #home {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "homeTitle   homeImage"; } }
-
-@media (min-width: 768px) {
-  .homeHeading {
-    font-size: 4em;
-    padding-top: 40px; }
-  #homeTagline {
-    font-size: 3em; } }
-
 #author {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr; }
 
 #author--heading {
+  text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -167,6 +136,7 @@ main {
 .author--heading {
   font-size: 1.8em;
   font-family: "african";
+  font-weight: 400;
   color: #fff; }
 
 #author--image {
@@ -187,40 +157,6 @@ main {
   text-align: justify;
   line-height: 110%; }
 
-@media (min-width: 567px) and (max-width: 767px) {
-  #authorButtons {
-    display: none; }
-  #authorContainer {
-    display: grid;
-    grid-template-columns: 1fr 2fr; }
-  #authorHeadandImage {
-    grid-template-columns: 1fr; }
-  .authorHeading {
-    font-size: 1.5em;
-    padding: 0; } }
-
-@media (min-width: 768px) {
-  .authorHeading {
-    font-size: 4em; }
-  #authorImage {
-    height: 200px;
-    width: 200px;
-    border: 4px solid white; }
-  #authorBlurb {
-    padding-top: 20px; }
-  .authorBlurb {
-    font-size: 2.5em; } }
-
-@media (min-width: 900px) {
-  .authorHeading {
-    font-size: 5em;
-    padding-top: 50px; }
-  #authorImage {
-    height: 300px;
-    width: 300px; }
-  #authorBlurb {
-    padding-top: 50px; } }
-
 #story {
   display: grid;
   grid-template-columns: 1fr; }
@@ -228,6 +164,7 @@ main {
 .story--heading {
   font-size: 1.3em;
   font-family: "african";
+  font-weight: 400;
   text-align: center;
   padding: 0 0 10px 0;
   color: #fff; }
@@ -243,28 +180,61 @@ main {
   text-align: justify;
   line-height: 110%; }
 
-@media (min-width: 567px) and (max-width: 767px) {
-  #storyButtons {
+@media screen and (min-width: 569px) {
+  /* Navbar Responsive */
+  #navbar {
+    justify-content: space-between; }
+    #navbar #navbar--wildebeest {
+      padding-left: 15px; }
+    #navbar #navbar--links {
+      display: block; }
+  #screen--btns {
     display: none; }
-  #storyContainer {
-    display: grid;
+  /* Home Responsive */
+  #home {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "homeTitle   homeImage"; }
+    #home #home--heading {
+      font-size: 2em;
+      padding-top: 80px; }
+    #home #home--tagline {
+      font-size: 1.4em; }
+  /* Author Responsive */
+  #author {
+    grid-template-columns: 1fr 2fr; }
+    #author #author--heading {
+      grid-template-columns: 1fr; }
+    #author .author--heading {
+      font-size: 1.5em;
+      padding: 0; }
+  /* Story Responsive */
+  #story {
     grid-template-columns: 1fr 3fr; }
-  .storyHeading {
-    padding: 0 5px 0 0;
-    font-size: 1.3em; } }
+    #story .story--heading {
+      padding: 0 15px 0 0;
+      font-size: 1.6em; } }
 
-@media (min-width: 768px) {
-  .storyHeading {
-    font-size: 4em;
-    padding: 0 0 20px 0; }
-  .bookBlurb {
-    font-size: 2.3em;
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  /* Navbar Responsive */
+  #navbar {
+    height: 100px; }
+    #navbar #navbar--wildebeest {
+      width: 80px; }
+    #navbar #navbar--links .navbar--link {
+      font-size: 2em; }
+  /* Author Responsive */
+  #author--heading .author--heading {
+    font-size: 2em;
+    padding: 0; }
+  #author--heading #author--image {
+    height: 150px;
+    width: 150px;
+    border: 3px solid #fff;
+    margin-top: 10px; }
+  .author--blurb {
+    font-size: 1.7em; }
+  /* Story Responsive */
+  .book--blurb {
+    font-size: 1.7em;
     padding: 0 0 20px 0;
     line-height: 120%; } }
-
-@media (min-width: 900px) {
-  .storyHeading {
-    font-size: 5em;
-    padding: 0 0 40px 0; }
-  .bookBlurb {
-    font-size: 3em; } }

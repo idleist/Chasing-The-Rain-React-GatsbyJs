@@ -6,6 +6,7 @@
 .story--heading {
   font-size: 1.3em;
   font-family: "african";
+  font-weight: 400;
   text-align: center;
   padding: 0 0 10px 0;
   color: $text-primary;
@@ -21,47 +22,4 @@
   color: white;
   text-align: justify;
   line-height: 110%;
-}
-
-@media (min-width: 567px) and (max-width: 767px) {
-  #storyButtons {
-    display: none;
-  }
-
-  #storyContainer {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-  }
-
-  .storyHeading {
-    padding: 0 5px 0 0;
-    font-size: 1.3em;
-  }
-}
-
-@media (min-width: 768px) {
-  .storyHeading {
-    font-size: 4em;
-    padding: 0 0 20px 0;
-  }
-
-  .bookBlurb {
-    font-size: 2.3em;
-    padding: 0 0 20px 0;
-    line-height: 120%;
-  }
-}
-
-@media (min-width: 900px) {
-  .storyHeading {
-    font-size: 5em;
-    padding: 0 0 40px 0;
-  }
-
-  .bookBlurb {
-    font-size: 3em;
-  }
-}
-
-@media (min-width: 1800px) {
 }

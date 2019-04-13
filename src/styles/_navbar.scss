@@ -49,31 +49,3 @@
     }
   }
 }
-
-@media (min-width: 567px) {
-  #navbar {
-    justify-content: space-between;
-
-    #navbar--wildebeest {
-      padding-left: 15px;
-    }
-
-    #navbar--links {
-      display: block;
-    }
-  }
-}
-
-@media (min-width: 767px) {
-  #navbar {
-    height: 100px;
-
-    #navbar--wildebeest {
-      width: 80px;
-    }
-
-    #navbar--links .navbar--link {
-      font-size: 2em;
-    }
-  }
-}
