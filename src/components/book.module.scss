@@ -3,12 +3,23 @@
     flex-direction: column;
     align-items: center;
     height: 100vh;
+
+    @include mediaPhoneLandscape{
+        flex-direction: row;
+        height: 140vh;
+        justify-content: center;
+    }
 }
 
 .details{
     text-align: center;
     margin-top: 10em;
     margin-bottom: 1em;
+
+    @include mediaPhoneLandscape{
+        margin-top: 0;
+    }
+
     @include mediaSm{
         margin-top: 8em; 
     }

@@ -11,8 +11,8 @@ $nanda : "Nanda", cursive;
 
 
 // Media Query Mixins
-@mixin mediaPhone {
-  @media screen and (max-width: 599px) {
+@mixin mediaPhoneLandscape {
+  @media screen and (min-width: 567px) and (max-width: 599px) {
     @content;
   }
 }

@@ -51,6 +51,11 @@
         }
     }
   }
+  @include mediaPhoneLandscape{
+    height: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
   @include mediaSm {
     height: 80px;
