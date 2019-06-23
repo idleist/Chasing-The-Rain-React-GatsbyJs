@@ -1,0 +1,40 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,.8);
+    padding: 2em 1em;
+}
+
+.details{
+    text-align: center;
+
+    .link-buy{
+        font-size: 1.3rem;
+      font-weight: 700;
+      outline: none;
+      color: $text-secondary;
+      background: $background-color;
+      padding: 10px 10px 3px 10px;
+      border-radius: 10px;
+      transition: all 350ms ease-in;
+
+        &:hover{
+          background: #fff;
+          color: #000;
+        }
+    }
+
+    p{
+        padding-top: 0.5em;
+    }
+
+    a{
+        color: #fff;
+        transition: all 350ms ease-in;
+
+        &:hover{
+            color: $background-color;
+        }
+    }
+    
+}

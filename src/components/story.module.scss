@@ -1,0 +1,62 @@
+.story{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em 1em;
+}
+
+.heading-container{
+    position: relative;
+    height: 13rem;
+    margin-bottom: 1em;
+
+    .heading{
+        font-size: 2rem;
+        font-family: $nanda;
+        text-align: center;
+        margin-top: 3.5rem;
+    }
+    
+    .wildebeest{
+        position: absolute;
+        right: 50%;
+        z-index: -3;
+        transform: translateX(50%);
+        width: 15rem;
+    }
+}
+
+.details{
+    .story-image{
+        width: 80%;
+        margin: 0 auto;
+        border: 5px solid black;
+        display: none;
+        @include mediaMd{
+            display: inherit; 
+        }
+
+        
+    }
+
+
+    .description {
+        font-size: 1.2rem;
+        text-align: justify;
+        @include mediaMd{
+            display: none; 
+        }
+    
+        p{
+            margin-bottom: 0.3em;
+
+            @include mediaSm{
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+}
+
+
+

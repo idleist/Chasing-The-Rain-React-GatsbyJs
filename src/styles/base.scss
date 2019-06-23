@@ -1,0 +1,42 @@
+/* Imported Fonts from dafonts.com */
+@font-face {
+  font-family: "african";
+  src:url("../assets/fonts/african.woff") format('woff'), 
+      url("../assets/fonts/african.ttf") format('truetype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Nanda";
+  src: url("../assets/fonts/nanda.woff") format('woff'),
+        url("../assets/fonts/nanda.ttf") format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Nanda";
+  color: #fff;
+}
+
+section{
+  margin: 1em 0;
+}
+
+a{
+  text-decoration: none;
+  
+}
+
+
+
+
