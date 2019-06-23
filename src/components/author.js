@@ -53,26 +53,3 @@ const Author = () => (
 )
 
 export default Author
-
-{/* <div id="authorContainer">
-    <div id="authorHeadandImage">
-      <h1 id="heading" className="authorHeading">
-        About The Author
-      </h1>
-      <img id="authorImage" src={author} alt="James E Rugman" />
-    </div>
-    
-    <div id="homeButtons">
-      <Link to="/story" className="linkButton">
-        The Story
-      </Link>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.amazon.co.uk/Chasing-Rain-James-Rugman/dp/1797415689/ref=la_B07PNMDJTD_1_1?s=books&amp;ie=UTF8&amp;qid=1553780744&amp;sr=1-1"
-        className="linkButton"
-      >
-        Buy Now On Amazon
-      </a>
-    </div>
-  </div> */}
